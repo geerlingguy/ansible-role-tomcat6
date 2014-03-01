@@ -1,0 +1,4 @@
+---
+tomcat6_hostname: localhost
+tomcat6_catalina_port: 8983
+tomcat6_catalina_redirect_port: 8443

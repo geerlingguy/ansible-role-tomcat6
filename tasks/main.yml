@@ -1,0 +1,14 @@
+---
+# Java and Tomcat6.
+- name: Ensure Java and tomcat6 are installed.
+  yum: name={{ item }} state=installed
+  with_items:
+  - tomcat6
+  - tomcat6-webapps
+  - tomcat6-admin-webapps
+
+- name: Copy tomcat6 server.xml.
+  template: src=server.xml.j2 dest=/etc/tomcat6/server.xml owner=root group=root mode=0644
+
+- name: Ensure tomcat6 is running.
+  service: name=tomcat6 state=started enabled=yes
