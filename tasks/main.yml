@@ -1,11 +1,15 @@
 ---
-# Java and Tomcat6.
-- name: Ensure Java and tomcat6 are installed.
+- name: Ensure Tomcat6 packages are installed (RedHat).
   yum: name={{ item }} state=installed
   with_items:
   - tomcat6
   - tomcat6-webapps
   - tomcat6-admin-webapps
+  when: ansible_os_family == 'RedHat'
+
+- name: Ensure Tomcat6 is installed (Debian).
+  apt: name=tomcat6 state=installed
+  when: ansible_os_family == 'Debian'
 
 - name: Copy tomcat6 server.xml.
   template: src=server.xml.j2 dest=/etc/tomcat6/server.xml owner=root group=root mode=0644
