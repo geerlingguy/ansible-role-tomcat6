@@ -1,6 +1,8 @@
 # Ansible Role: Tomcat 6
 
-An Ansible Role that installs Tomcat 6 on RHEL/CentOS 6.x and Debian/Ubuntu.
+[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-tomcat6.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-tomcat6)
+
+An Ansible Role that installs Tomcat 6 on RedHat/CentOS 6.x and Debian/Ubuntu Linux servers.
 
 ## Requirements
 
