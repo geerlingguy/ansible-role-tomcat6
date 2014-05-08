@@ -32,3 +32,8 @@ script:
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
+
+  # Debugging.
+  - updatedb
+  - locate catalina.out
+  - cat /var/log/tomcat6/catalina.out
