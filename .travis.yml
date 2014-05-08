@@ -36,3 +36,4 @@ script:
 
   # Debugging.
   - sudo cat /var/log/tomcat6/catalina.out
+  - sudo netstat -plunt
