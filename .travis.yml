@@ -8,6 +8,8 @@ env:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y curl
+  - sudo dpkg --get-selections | grep -v deinstall
+  - service --status-all
 
 install:
   # Install Ansible.
