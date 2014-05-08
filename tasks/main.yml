@@ -15,5 +15,5 @@
   template: src=server.xml.j2 dest=/etc/tomcat6/server.xml owner=root group=root mode=0644
   notify: restart tomcat
 
-- name: Ensure tomcat6 is running.
-  service: name=tomcat6 state=started enabled=yes
+# - name: Ensure tomcat6 is running.
+#   service: name=tomcat6 state=started enabled=yes
