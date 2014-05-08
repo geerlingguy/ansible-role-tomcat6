@@ -3,4 +3,4 @@
   remote_user: root
   roles:
     - geerlingguy.java
-    - { name: ansible-role-tomcat6, tomcat6_catalina_port: 8999 }
+    - { role: ansible-role-tomcat6, tomcat6_catalina_port: 8999 }
