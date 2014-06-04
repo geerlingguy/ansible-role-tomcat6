@@ -68,7 +68,8 @@
     -->
     <Connector port="{{ tomcat6_catalina_port }}" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="{{ tomcat6_catalina_redirect_port }}" />
+               redirectPort="{{ tomcat6_catalina_redirect_port }}"
+               URIEncoding="UTF-8" />
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
