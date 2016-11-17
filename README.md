@@ -1,5 +1,7 @@
 # Ansible Role: Tomcat 6
 
+**DEPRECATION NOTICE**: [Tomcat 6's EOL is December 31, 2016](http://tomcat.apache.org/tomcat-60-eol.html), meaning there will no longer be support or security updates from the Apache Software Foundation. This role will remain on Galaxy for historical purposes, but you should migrate to newer versions or otherwise update your software ASAP!
+
 [![Build Status](https://travis-ci.org/geerlingguy/ansible-role-tomcat6.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-tomcat6)
 
 An Ansible Role that installs Tomcat 6 on RedHat/CentOS and Debian/Ubuntu Linux servers.
